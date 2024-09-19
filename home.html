@@ -18,7 +18,7 @@
                     <div>
                         <div class="stats shadow">
                             <div class="stat">
-                                <div class="stat-value">89,40</div>
+                                <div id="available-balance" class="stat-value">8940</div>
                                 <div class="stat-desc">Available Balance</div>
                             </div>
                         </div>
@@ -26,28 +26,28 @@
                     <hr>
                     <!-- Button grid -->
                     <div class="mt-5 grid grid-cols-3 gap-4 mx-3">
-                        <button class="btn btn-lg">Add Money</button>
+                        <button id="btn-add-money" class="btn btn-lg">Add Money</button>
                         <button class="btn btn-lg">Cash Out</button>
                         <button class="btn btn-lg">Transfer Money</button>
                     </div>
                     <!-- button grid end -->
                     <!-- form start -->
-                    <div class="card bg-base-100 max-w-sm shrink-0 shadow-2xl mt-3">
+                    <div id="add-money-form" class="card bg-base-100 max-w-sm shrink-0 shadow-2xl mt-3 hidden">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Amount</span>
                                 </label>
-                                <input type="number" placeholder="Enter your Amount" class="input input-bordered" required />
+                                <input id="amount-input" type="number" placeholder="Enter your Amount" class="input input-bordered" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Pin</span>
                                 </label>
-                                <input type="password" placeholder="Enter Pin" class="input input-bordered" required autocomplete="off" />
+                                <input id="pin-input" type="password" placeholder="Enter Pin" class="input input-bordered" required autocomplete="off" />
                             </div>
                             <div class="form-control mt-6">
-                                <button class="btn btn-primary">Login</button>
+                                <button id="money-added-primarybtn" class="btn btn-primary">Add Money</button>
                             </div>
                         </form>
                     </div>
